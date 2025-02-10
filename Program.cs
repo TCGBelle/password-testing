@@ -3,49 +3,48 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace std
 {
+    [Flags]
     public enum errorType
     {
-        None,
-        BelowMinimum,
-        AboveMaximum,
-        IsNull,
-        BelowSize,
-        AboveSize,
-        NoDigits,
-        NoCapitals
+        None = 0,
+        BelowMinimum = 1 << 0,
+        AboveMaximum = 1 << 1,
+        IsNull = 1 << 2,
+        BelowSize = 1 << 3,
+        AboveSize = 1 << 4,
+        NoDigits = 1 << 5,
+        NoCapitals = 1 << 6
     }
     public static class Passwords
     {
-
-        public static List<errorType> PasswordTester(string password, int minSize, int maxSize ,bool needDigit, bool needCapital)
+        public static errorType PasswordTester(string password, int minSize, int maxSize ,bool needDigit, bool needCapital)
         {
-            List<errorType> errors = new List<errorType>();
+            errorType errors = errorType.None;
 
             if (password == null)
             {
-                errors.Add(errorType.IsNull);
-                return errors;
+                return errorType.IsNull;
             }
 
             if (minSize <= 0)
-                errors.Add(errorType.BelowMinimum);
+                errors |= errorType.BelowMinimum;
 
             if (maxSize >= 256)
-                errors.Add(errorType.AboveMaximum);
+                errors |= errorType.AboveMaximum;
 
             if (password.Length < minSize)
-                errors.Add(errorType.BelowSize);
+                errors |= errorType.BelowSize;
 
             if (password.Length > maxSize)
-                errors.Add(errorType.AboveSize);
+                errors |= errorType.AboveSize;
 
             if (needCapital && !password.Any(char.IsUpper))
-                errors.Add(errorType.NoCapitals);
+                errors |= errorType.NoCapitals;
 
             if (needDigit && !password.Any(char.IsDigit))
-                errors.Add(errorType.NoDigits);
+                errors |= errorType.NoDigits;
 
-            return errors.Count > 0 ? errors : new List<errorType> { errorType.None };
+            return errors;
         }
     }
 }
