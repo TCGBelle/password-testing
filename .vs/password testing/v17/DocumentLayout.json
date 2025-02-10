@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Annabelle\\source\\repos\\password testing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED9B554-EB24-4F45-B7CB-D5D0F8969A1B}|password testing\\password testing.csproj|c:\\users\\annabelle\\source\\repos\\password testing\\password testing\\passwordtestertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED9B554-EB24-4F45-B7CB-D5D0F8969A1B}|password testing\\password testing.csproj|solutionrelative:password testing\\passwordtestertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED9B554-EB24-4F45-B7CB-D5D0F8969A1B}|password testing\\password testing.csproj|c:\\users\\annabelle\\source\\repos\\password testing\\password testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED9B554-EB24-4F45-B7CB-D5D0F8969A1B}|password testing\\password testing.csproj|solutionrelative:password testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PasswordTesterTests.cs",
+              "DocumentMoniker": "C:\\Users\\Annabelle\\source\\repos\\password testing\\password testing\\PasswordTesterTests.cs",
+              "RelativeDocumentMoniker": "password testing\\PasswordTesterTests.cs",
+              "ToolTip": "C:\\Users\\Annabelle\\source\\repos\\password testing\\password testing\\PasswordTesterTests.cs",
+              "RelativeToolTip": "password testing\\PasswordTesterTests.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAE4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T10:37:45.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Annabelle\\source\\repos\\password testing\\password testing\\Program.cs",
+              "RelativeDocumentMoniker": "password testing\\Program.cs",
+              "ToolTip": "C:\\Users\\Annabelle\\source\\repos\\password testing\\password testing\\Program.cs",
+              "RelativeToolTip": "password testing\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T16:41:02.388Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
